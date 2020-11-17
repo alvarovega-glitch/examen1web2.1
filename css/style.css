@@ -33,9 +33,6 @@ h1,h2,h3,h4,h5,h6{
 	padding-bottom: 10%;
 	
 }
-#works p1{
-padding-top: 5px; 
-}
 
 #hero h2{
 	font-size: 4.5em;
@@ -62,17 +59,16 @@ padding-top: 5px;
 .btn-primary {
 	
 	text-transform: uppercase;
-	background-color: #FFFFFF;
+	background-color: var(--color-principal);
 	padding: 1% 5%;
 	border: 0;
 	font-weight: 700;
 	box-shadow: 0px 0px 10px 0px rgba(247, 81, 96, 0.50);
-	color: #000000;
 	
 }
 
 .btn-primary:hover{
-	background-color: #FFFFFF;
+	background-color: var(--color-boton-hover);
 }
 
 #home-continuar{
@@ -87,15 +83,13 @@ padding-top: 5px;
 
 #home-continuar article:first-child,
 #home-continuar article:last-child{
-    background-color: #BEFAFC;
+    background-color: #A1FDFF;
     border-radius: 3%;
 }
 
 #home-continuar article:nth-child(2){
-    background-color: #d4fdfe;
+    background-color: var(--Color-v-precios);
     border-radius: 3%;
-	padding-top: -25px;
-	padding-bottom: -25px;
 }
 .info-icono{
 	padding: 25% 5%;
@@ -132,7 +126,7 @@ padding-top: 5px;
 }
 
 #features{
-	background-image: url("../bg-rectangle.jpg");
+	
 	background-color: var(--color-gris);
 	text-align: left;
 }
@@ -187,9 +181,30 @@ padding-top: 5px;
 }
 
 #works {
-	background-size:contain;
+	background-size: cover;
 	background-position: right;
-	text-align: left;
+}
+
+#works .tab-content{
+	padding: 40px 0;
+}
+
+#works .nav-tabs a {
+	color: #000;
+	font-size: 20px;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 45px;
+}
+
+#works .nav-tabs a.active {
+	background-color:  var(--color-principal);
+	color: #FFFFFF;
+}
+
+#works .nav-tabs {
+	box-shadow: 0px 0px 10px 0px #ddd;
+	background-color: #fff;
 }
 
 .app-carousel {
@@ -213,57 +228,4 @@ padding-top: 5px;
 .app-carousel .owl-dot.active {
     background-color: #fb397d;
     border: 0 !important;
-}
-#prices{
-text-align: center;
-	background-image: url("../img/bg-offers.jpg");
-	bacground-size: cover;
-}
-
-#prices .info-icono:first-child,
-#prices .info-icono:last-child{
-    padding: 25% 5%;
-}
-
-#prices .info-icono:nth-child(2){
-    padding: 30% 5%;
-}
-
-#home-continuar h3, #home-continuar p{
-    color: var(--Color-negro);
-}
-
-
-#prices article:first-child,
-#prices article:last-child{
-    background-color: #A1FDFF;
-    border-radius: 3%;
-}
-
-#prices article:nth-child(2){
-    background-color:#FFFFFF;
-    border-radius: 3%;
-}
-
-#prices h8{
-margin-bottom: 60px;
-}
-
-#prices p{
-margin-top: 40px;
-}
-
-#works{
-margin-bottom: 60px;
-}
-#top {
-background-color: #1c1c1c;
-
-}
-#top h2{
-	margin-right: 70px;
-}
-#bot {
-background-color: #f4f4f4;
-	text-align: center;
 }
