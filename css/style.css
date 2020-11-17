@@ -33,6 +33,9 @@ h1,h2,h3,h4,h5,h6{
 	padding-bottom: 10%;
 	
 }
+#works p1{
+padding-top: 5px; 
+}
 
 #hero h2{
 	font-size: 4.5em;
@@ -59,16 +62,17 @@ h1,h2,h3,h4,h5,h6{
 .btn-primary {
 	
 	text-transform: uppercase;
-	background-color: var(--color-principal);
+	background-color: #FFFFFF;
 	padding: 1% 5%;
 	border: 0;
 	font-weight: 700;
 	box-shadow: 0px 0px 10px 0px rgba(247, 81, 96, 0.50);
+	color: #000000;
 	
 }
 
 .btn-primary:hover{
-	background-color: var(--color-boton-hover);
+	background-color: #FFFFFF;
 }
 
 #home-continuar{
@@ -83,13 +87,15 @@ h1,h2,h3,h4,h5,h6{
 
 #home-continuar article:first-child,
 #home-continuar article:last-child{
-    background-color: #A1FDFF;
+    background-color: #BEFAFC;
     border-radius: 3%;
 }
 
 #home-continuar article:nth-child(2){
-    background-color: var(--Color-v-precios);
+    background-color: #d4fdfe;
     border-radius: 3%;
+	padding-top: -25px;
+	padding-bottom: -25px;
 }
 .info-icono{
 	padding: 25% 5%;
@@ -126,7 +132,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #features{
-	
+	background-image: url("../bg-rectangle.jpg");
 	background-color: var(--color-gris);
 	text-align: left;
 }
@@ -181,30 +187,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #works {
-	background-size: cover;
+	background-size:contain;
 	background-position: right;
-}
-
-#works .tab-content{
-	padding: 40px 0;
-}
-
-#works .nav-tabs a {
-	color: #000;
-	font-size: 20px;
-	border: 0;
-	border-radius: 0;
-	padding: 10px 45px;
-}
-
-#works .nav-tabs a.active {
-	background-color:  var(--color-principal);
-	color: #FFFFFF;
-}
-
-#works .nav-tabs {
-	box-shadow: 0px 0px 10px 0px #ddd;
-	background-color: #fff;
+	text-align: left;
 }
 
 .app-carousel {
@@ -228,4 +213,57 @@ h1,h2,h3,h4,h5,h6{
 .app-carousel .owl-dot.active {
     background-color: #fb397d;
     border: 0 !important;
+}
+#prices{
+text-align: center;
+	background-image: url("../img/bg-offers.jpg");
+	bacground-size: cover;
+}
+
+#prices .info-icono:first-child,
+#prices .info-icono:last-child{
+    padding: 25% 5%;
+}
+
+#prices .info-icono:nth-child(2){
+    padding: 30% 5%;
+}
+
+#home-continuar h3, #home-continuar p{
+    color: var(--Color-negro);
+}
+
+
+#prices article:first-child,
+#prices article:last-child{
+    background-color: #A1FDFF;
+    border-radius: 3%;
+}
+
+#prices article:nth-child(2){
+    background-color:#FFFFFF;
+    border-radius: 3%;
+}
+
+#prices h8{
+margin-bottom: 60px;
+}
+
+#prices p{
+margin-top: 40px;
+}
+
+#works{
+margin-bottom: 60px;
+}
+#top {
+background-color: #1c1c1c;
+
+}
+#top h2{
+	margin-right: 70px;
+}
+#bot {
+background-color: #f4f4f4;
+	text-align: center;
 }
